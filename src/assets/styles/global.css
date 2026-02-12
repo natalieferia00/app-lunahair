@@ -1,0 +1,37 @@
+:root {
+  --bg-dark: #0a0a0c;
+  --card-bg: #16161a;
+  --text-main: #ffffff;
+  --text-dim: #94a3b8;
+  --green-dot: #4ade80;
+  --yellow-dot: #fbbf24;
+  --red-dot: #f87171;
+  --blue-dot: #38bdf8;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px; /* Ancho ideal para móviles y tablets */
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.moon-card {
+  background: var(--card-bg);
+  border-radius: 28px;
+  padding: 25px;
+  text-align: center;
+  border: 1px solid #2d2d35;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
